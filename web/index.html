@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-
+<script type="text/javascript" src="source/main.js" ></script>
 <body>
+
     <header>
         <!-- logo -->
-        <div id="menu-hamburger">
+        <div id="menu-hamburger" onclick="showMenu()">
             <div class="bar top-bar"></div>
             <div class="bar middle-bar"></div>
             <div class="bar bottom-bar"></div>
@@ -29,7 +30,28 @@
     </header>
     <nav>
         <!-- MENUS -->
-
+        <nav class="menu" id="socials-menu">
+            <div id="social-items">
+                <a target="_blank" href="https://facebook.com"><img class="social-item" src="../_src/facebook-f-brands.svg" alt="facebool"></a>
+                <a target="_blank" href="https://instagram.com"><img class="social-item" src="../_src/instagram-brands.svg" alt="instagram"></a>
+                <a target="_blank" href="https://twitter.com/"><img class="social-item" src="../_src/twitter-brands.svg" alt="twitter"></a>
+                <a target="_blank" href="https://vuejs.org/guide/introduction.html"><img class="social-item" src="../_src/share-alt-solid.svg" alt="share"></a>
+            </div>
+        </nav>
+        <nav class="menu" id="hidden-menu">
+            <a id="menu-item" href="#">Home</a>
+            <a id="menu-item" href="#">About me</a>
+            <a id="menu-item" href="#">Posts</a>
+            <a id="menu-item" href="#">Gallery</a>
+            <a id="menu-item" href="#">Contacts</a>
+            <div class="socials">
+                <a class="social-menu-item" target="_blank" href="https://facebook.com"><img class="social-item" src="../_src/facebook-f-brands.svg" alt="facebool"></a>
+                <a class="social-menu-item" target="_blank" href="https://instagram.com"><img class="social-item" src="../_src/instagram-brands.svg" alt="instagram"></a>
+                <a class="social-menu-item" target="_blank" href="https://twitter.com/"><img class="social-item" src="../_src/twitter-brands.svg" alt="twitter"></a>
+                <a class="social-menu-item" target="_blank" href="https://vuejs.org/guide/introduction.html"><img class="social-item" src="../_src/share-alt-solid.svg" alt="share"></a>
+            </div>
+            <a href="#" id="close" onclick="showMenu()">close</a>
+        </nav>
     </nav>
     <main>
         
