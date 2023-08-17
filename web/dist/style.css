@@ -187,6 +187,7 @@ footer{
 #hidden-menu{
     display: none;
     position: fixed;
+    font-size: 1.5rem;
     flex-direction: column;
     background-color: var(--grey-2-color)
 }
