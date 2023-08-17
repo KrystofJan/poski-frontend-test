@@ -56,22 +56,7 @@
     <main>
         
         <!-- Body -->
-        <a href="#" class="article one">
-            <article>
-                <div class="tag travel">Travel</div>
-                <div class="description">
-                    <h2>Etiam quis quam. Nemo enim ipsam voluptatem quia</h2>
-                    <span class="date">May 25, 2048 / 9 min.</span>
-                </div>
-            </article>
-        </a>
-        <a href="#" class="article two">
-            <article>
-                <img src="../_src/space-station-moon-alt-duotone.svg" alt="space-station" id="space-station">
-                <h2 class="title">Discover content from different universe</h2>
-            </article>
-        </a>
-        <a href="#" class="article three">
+        <a href="#" class="article one" onclick="loading(this)">
             <article>
                 <div class="tag travel">Travel</div>
                 <div class="description">
@@ -80,24 +65,38 @@
                 </div>
             </article>
         </a>
-        <a href="#" class="article four">
+        <a href="#" class="article two" onclick="loading(this)">
             <article>
-                <div class="tag tech">Tech</div>
-                <div class="description">
-                    <h2>Etiam quis quam. Nemo enim ipsam voluptatem quia</h2>
-                    <span class="date">May 25, 2048 / 9 min.</span>
-                </div>
+                <img src="../_src/space-station-moon-alt-duotone.svg" alt="space-station" id="space-station">
+                <h2 class="title description-title">Discover content from different universe</h2>
             </article>
         </a>
-        <a href="#" class="article five">
+        <a href="#" class="article three" onclick="loading(this)">
             <article>
                 <div class="tag travel">Travel</div>
                 <div class="description">
-                    <h2>Etiam quis quam. Nemo enim ipsam voluptatem quia</h2>
-                    <span class="date">May 25, 2048 / 9 min.</span>
+                    <h2 class="description-title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h2>
+                    <span class="date">January 10, 2048 / 4 min.</span>
                 </div>
             </article>
         </a>
+        <a href="#" class="article four" onclick="loading(this)">
+            <article>
+                <div class="tag tech">Tech</div>
+                <div class="description">
+                    <h2 class="description-title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h2>
+                    <span class="date">October 20, 2047 / 5 min.</span>
+                </div>
+            </article>
+        </a>
+        <a href="#" class="article five" onclick="loading(this)">
+            <article>
+                <div class="tag travel">Travel</div>
+                <div class="description">
+                    <h2 class="description-title">Etiam quis quam. Nemo enim ipsam voluptatem quia</h2>
+                    <span class="date">August 20, 2047 / 8 min.</span>
+                </div>
+            </article>
         </a>
     </main> 
     <footer>
@@ -109,5 +108,8 @@
             <img src="../_src/logo.svg" alt="logo">
         </div>
     </footer>
+    <div id="loading-screen">
+        <div id="loader"></div>
+    </div>
 </body>
 </html>

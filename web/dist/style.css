@@ -247,3 +247,28 @@ footer{
 .social-item:hover{
     filter: invert(100%);
 }
+
+#loading-screen{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+}
+#loader{
+    border: 1rem solid var(--pink-color);
+    border-radius: 50%;
+    border-top: 1rem solid var(--blue-color);
+    width: 5rem;
+    height: 5rem;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
