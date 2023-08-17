@@ -31,6 +31,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 1rem 0;
 }
 #logo-img{
     height: var(--logo-size);
@@ -81,6 +82,12 @@ main{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    text-decoration: none;
+    
+    transition: 0.3s;
+}
+.article:hover{
+    transform:scale(1.01);
 }
 .one{
     background-image: url("../../_src/article1.jpg");
@@ -88,7 +95,17 @@ main{
 }
 .two{
     background-image: linear-gradient(to bottom, var(--pink-color), var(--blue-color));
+    align-items: center;
     grid-area: b;
+}
+#space-station{
+    height: 50%;
+    opacity: 0.4;
+    margin: auto 0;
+}
+.title{
+    text-align: center;
+    color: #fff;
 }
 .three{
     background-image: url("../../_src/article2.jpg");
@@ -101,6 +118,34 @@ main{
 .five{
     background-image: url("../../_src/article4.jpg");
     grid-area: e;
+}
+
+article{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.description{
+    margin: auto 5%;
+    color: #fff;
+}
+.date{
+    opacity: 0.6;
+}
+.tag {
+    color: #000;
+    margin: 3% 5%;
+    padding: 0.25rem 0.5rem;
+    width: fit-content;
+}
+.travel{
+    background-color: var(--lime-green-color);
+}
+.tech{
+    background-color: var(--blue-color);
+    color: #fff;
 }
 
 /* FOOTER */
@@ -119,3 +164,4 @@ footer{
 #footer-logo > img{
     height: 2rem;
 }
+
