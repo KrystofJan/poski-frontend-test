@@ -133,6 +133,7 @@ article{
 }
 .date{
     opacity: 0.6;
+    font-size: 1rem;
 }
 .tag {
     color: #000;
@@ -270,6 +271,9 @@ footer{
 main > a, main > div{
     box-shadow: 1rem 1rem 1rem -1rem  black;
 }
+.description-title{
+    font-size: 1.5rem;
+}
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -295,7 +299,7 @@ main > a, main > div{
         margin: 0;
     }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
     html{
         font-size: 14px;
     }
