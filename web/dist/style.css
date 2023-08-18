@@ -273,7 +273,7 @@ main > a, main > div{
     box-shadow: 1rem 1rem 1rem -1rem  black;
 }
 .description-title{
-    font-size: 200%;
+    font-size: 180%;
 }
 @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -287,7 +287,7 @@ main > a, main > div{
         justify-content: space-evenly;
     }
     .description-title{
-        font-size: 130%;
+        font-size: 110%;
     }
     #space-station{
         height: 10rem;
@@ -300,8 +300,8 @@ main > a, main > div{
         margin: 0;
     }
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1517px) {
     .description-title{
-        font-size: 150%;
+        font-size: 130%;
     }
 }
